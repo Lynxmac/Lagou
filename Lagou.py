@@ -15,11 +15,11 @@ db_position = client.Lagou["position"]
 db_company = client.Lagou["company"]
 
 def getjson(query_params,first = True,pn=1):
-        requests.headers.update({'User-Agent':random.choice(agents)})
-        url = "http://www.lagou.com/jobs/positionAjax.json?px=default"+query_params
-        params = {"first":first,"pn":pn} 
-        res = requests.post(url,params)
-        return json.loads(res.text)
+    requests.headers.update({'User-Agent':random.choice(agents)})
+    url = "http://www.lagou.com/jobs/positionAjax.json?px=default"+query_params
+    params = {"first":first,"pn":pn} 
+    res = requests.post(url,params)
+    return json.loads(res.text)
 
 def get_total_pages(result):
     num = result['content']['positionResult']['totalCount']
