@@ -24,3 +24,7 @@ Lagou Spider crawl Lagou positions by using Filterbox.
 #### 中国互联网公司招聘行业排名
 
 ![image](Demo/行业排名.png)
+
+#### 关键词词云
+
+![image](Demo/职位词云.png)
